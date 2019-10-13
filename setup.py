@@ -16,7 +16,10 @@
 
 import sys
 from NanoVNASaver.about import version
+from os.path import join, dirname, abspath
 
+ROOT_DIRECTORY = dirname(abspath(__file__))
+SKINS_DIR = join(ROOT_DIRECTORY, "skins\\")
 if sys.version_info < (3, 7):
     print("You need at least Python 3.7 for this application!")
     if sys.version_info[0] < 3:
@@ -24,6 +27,7 @@ if sys.version_info < (3, 7):
     sys.exit(1)
 
 try:
+    print("Root directory is: " + ROOT_DIRECTORY)
     from setuptools import setup, find_packages
 except ImportError:
     print("Could not find setuptools")
@@ -52,5 +56,8 @@ setup(
         'pyserial',
         'PyQt5==5.11.2',
         'numpy',
+        'qtpy'
     ],
+    package_data={'NanoVNASaver': ['skins/*.css']},
+    data_files=[('skins', [SKINS_DIR+"dark-colored.css", SKINS_DIR+"light-colored.css", SKINS_DIR+"dark-monochrome.css", SKINS_DIR+"light-monochrome.css"])]
 )
