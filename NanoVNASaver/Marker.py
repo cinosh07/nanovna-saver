@@ -49,7 +49,7 @@ class Marker(QtCore.QObject):
         ################################################################################################################
 
         self.frequency_label = QtWidgets.QLabel("")
-        self.frequency_label.setMinimumWidth(100)
+        self.frequency_label.setMinimumWidth(175)
         self.frequency_label.setProperty("cssClass", "frequency_label")
         self.impedance_label = QtWidgets.QLabel("")
         self.impedance_label.setProperty("cssClass", "impedance_label")
@@ -60,7 +60,7 @@ class Marker(QtCore.QObject):
         self.parallel_x_label.setProperty("cssClass", "parallel_x_label")
         self.returnloss_label = QtWidgets.QLabel("")
         self.returnloss_label.setProperty("cssClass", "returnloss_label")
-        self.returnloss_label.setMinimumWidth(80)
+        self.returnloss_label.setMinimumWidth(175)
         self.vswr_label = QtWidgets.QLabel("")
         self.vswr_label.setProperty("cssClass", "vswr_label")
         self.inductance_label = QtWidgets.QLabel("")

@@ -20,7 +20,6 @@ import sys
 from PyQt5 import QtWidgets, QtCore
 from .NanoVNASaver import NanoVNASaver
 from .about import debug
-import qtmodern.windows
 
 
 def main():
@@ -67,19 +66,10 @@ def main():
 
     logger.info("Startup...")
 
-    # app = QApplication()
-    # win = YourWindow()
-
-    # qtmodern.styles.dark(app)
-    # mw = qtmodern.windows.ModernWindow(win)
-    # mw.show()
-
-
     QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling, True)
     app = QtWidgets.QApplication(sys.argv)
     window = NanoVNASaver()
-    mw = qtmodern.windows.ModernWindow(window)
-    mw.show()
+    window.show()
     app.exec_()
 
 
