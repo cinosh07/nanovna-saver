@@ -34,7 +34,7 @@ def DEFAULT_UI():
     if getattr(sys, 'frozen', False):
         return sys._MEIPASS + '/skins/default.css'
     else:
-        url = join(ROOT_DIRECTORY, "skins\\default.css")
+        url = join(ROOT_DIRECTORY, "skins/default.css")
         return url
 
 
@@ -42,7 +42,7 @@ def DARK_SKIN_MONOCHROME():
     if getattr(sys, 'frozen', False):
         return sys._MEIPASS + '/skins/dark-monochrome.css'
     else:
-        url = join(ROOT_DIRECTORY, 'skins\\dark-monochrome.css')
+        url = join(ROOT_DIRECTORY, 'skins/dark-monochrome.css')
         return url
 
 
@@ -50,7 +50,7 @@ def DARK_SKIN_COLORED():
     if getattr(sys, 'frozen', False):
         return sys._MEIPASS + '/skins/dark-colored.css'
     else:
-        url = join(ROOT_DIRECTORY, 'skins\\dark-colored.css')
+        url = join(ROOT_DIRECTORY, 'skins/dark-colored.css')
         return url
 
 
@@ -58,7 +58,7 @@ def LIGHT_SKIN_MONOCHROME():
     if getattr(sys, 'frozen', False):
         return sys._MEIPASS + '/skins/light-monochrome.css'
     else:
-        url = join(ROOT_DIRECTORY, 'skins\\light-monochrome.css')
+        url = join(ROOT_DIRECTORY, 'skins/light-monochrome.css')
         return url
 
 
@@ -66,7 +66,7 @@ def LIGHT_SKIN_COLORED():
     if getattr(sys, 'frozen', False):
         return sys._MEIPASS + '/skins/light-colored.css'
     else:
-        url = join(ROOT_DIRECTORY, 'skins\\light-colored.css')
+        url = join(ROOT_DIRECTORY, 'skins/light-colored.css')
         return url
 
 DARK_SKIN_STRING_COLORED = "Dark Colored"
